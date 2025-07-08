@@ -1,1 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PHPBBS - PHPのみで動作する掲示板</title>
+  <style>
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #24292e;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
+    }
+    main {
+      max-width: 860px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+    h2 {
+      border-left: 6px solid #2da44e;
+      padding-left: 10px;
+      margin-top: 30px;
+    }
+    ul, ol {
+      padding-left: 20px;
+    }
+    pre {
+      background-color: #eee;
+      padding: 10px;
+      border-radius: 4px;
+      overflow-x: auto;
+    }
+    .github-link {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background-color: #2da44e;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+    .github-link:hover {
+      background-color: #218739;
+    }
+    footer {
+      text-align: center;
+      margin: 50px 0 20px;
+      color: #777;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PHPBBS</h1>
+    <p>PHPだけで動作するシンプルな掲示板</p>
+  </header>
 
+  <main>
+    <section>
+      <h2>📦 GitHub リポジトリ</h2>
+      <p>この掲示板は、<strong>PHPのみ</strong>で動作し、データベースは不要です。ファイルへの書き込みで投稿を保存します。</p>
+      <a href="https://github.com/ppmk8player/PHPBBS" target="_blank" class="github-link">GitHubで見る</a>
+    </section>
+
+    <section>
+      <h2>✨ 特徴</h2>
+      <ul>
+        <li>データベース不要（ファイル保存）</li>
+        <li>シンプルな構成で軽量</li>
+        <li>投稿・削除機能付き</li>
+        <li>そのままアップロードして動作</li>
+        <li>HTML/CSSのカスタマイズも簡単</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>🚀 セットアップ方法</h2>
+      <ol>
+        <li>リポジトリをクローンまたはダウンロード：
+          <pre>git clone https://github.com/ppmk8player/PHPBBS.git</pre>
+        </li>
+        <li>Webサーバーの公開ディレクトリに配置</li>
+        <li>書き込み権限を付与：
+          <pre>chmod -R 707 data</pre>
+        </li>
+        <li>ブラウザで `index.php` にアクセスして確認</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>📄 ライセンス</h2>
+      <p>このプロジェクトは <strong>MITライセンス</strong> で公開されています。個人利用・商用利用どちらも可能です。</p>
+    </section>
+
+    <section>
+      <h2>🙋 サポート・貢献</h2>
+      <p>改善提案やバグ報告は <a href="https://github.com/ppmk8player/PHPBBS/issues" target="_blank">GitHub Issues</a> にてどうぞ。</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 PHPBBS by ppmk8player | MIT Licensed
+  </footer>
+</body>
+</html>
